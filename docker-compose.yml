@@ -63,7 +63,7 @@ services:
             
         command: "python scheduler_script.py"
         volumes:
-            - ${LOG_PATH}/parsing_app:/parsing_app/logs
+            - ${LOG_PATH}/parsing_log:/parsing_app/logs
             - ${UPLOADFILE_BASE}:/parsing_app/files/file_upload
             - ${BACKUPFILE_BASE}:/parsing_app/files/file_backup
 
