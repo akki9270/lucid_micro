@@ -49,8 +49,8 @@ services:
         restart: always
         depends_on: 
             - lucid    
-        # networks:
-            # - app-network
+        networks:
+            - app-network
             
         environment:
             DB_USERNAME: ${MYSQL_USER}
